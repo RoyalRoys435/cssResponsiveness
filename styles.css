@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1b1111;
+}
+
+main {
+  font-family: [Poppins];
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 375px)and (max-width:1440px) {
+  .main {
+    flex-direction: column;
+    background-image: url("images/bg-intro-mobile.png");
+    margin-top: 0;
+    box-sizing: border-box;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:375px) and(max-width:1440px) {
+  .left-content,
+  .right-content {
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+    height: auto;
+  }
+}
+
+.main {
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.left {
+  padding: 2em;
+  color: white;
+  width: 50%;
+}
+
+.left h3 {
+  font-size: 40px;
+}
+
+.right {
+  padding: 2em;
+  width: 80%;
+}
+
+.right .blue {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  box-shadow: 0 6px 10px rgb(0, 0, 0, 0.4);
+  width: 70%;
+  
+}
+
+.right .rightly {
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px 20px;
+  box-shadow: 0 6px 10px rgb(0, 0, 0, 0.4);
+  width: 70%;
+}
+form {
+  align-content: center;
+  
+}
+
+input {
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover{
+  opacity: 60%;
+}
+
+.lastp{
+  text-align: center;
+  font-size: 10px;
+}
+
+.lastp .span{
+  color: red;
+}
+
+input:required:focus:invalid {
+  background-image: url("");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-color:red;
+}
+input:invalid {
+  border-color: black;
+  background-image: url("images/icon-error.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: right;
+  content: attr(data-error);
+}
