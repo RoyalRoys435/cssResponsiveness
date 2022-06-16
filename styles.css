@@ -17,22 +17,22 @@ main {
   height: 100vh;
 }
 
-@media screen and (min-width: 375px)and (max-width:1440px) {
+@media screen and (min-width: 375px)and (max-width:2340px) {
   .main {
     flex-direction: column;
     background-image: url("images/bg-intro-mobile.png");
     margin-top: 0;
-    box-sizing: border-box;
+    
     height: auto;
   }
 }
 
-@media screen and (min-width:375px) and(max-width:1440px) {
+@media screen and (min-width:375px) and(max-width:2340px) {
   .left-content,
   .right-content {
     width: 100%;
     margin-top: 0;
-    box-sizing: border-box;
+   
     height: auto;
   }
 }
