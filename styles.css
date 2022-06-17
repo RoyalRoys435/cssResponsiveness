@@ -16,7 +16,30 @@ main {
   align-items: center;
   height: 100vh;
 }
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  @media all and (min-width: 375px), (max-width:1440px) {
+    
+    body .main .footer  {
+       flex-direction: column;
+       background-image: url("images/bg-hero-mobile.svg");
+       margin-top: 0;
+       box-sizing: border-box;
+       height: auto;
+   }
+}
 
+@media all and (min-width:375px) ,(max-width:1440px) {
+
+body .footer {
+       width: 100%;
+       margin-top: 0;
+  }
 
 .main {
   background-image: url("images/bg-intro-desktop.png");
